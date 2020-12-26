@@ -12,3 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: "\u82F1\u96C4\u8CC7\u6599"
   m_EditorClassIdentifier: Assembly-CSharp::Heroprofile
+  hp: 100
+  mp: 0
+  speed: 0
+  attack: 0
+  attackCD: 0
+  skills: []
