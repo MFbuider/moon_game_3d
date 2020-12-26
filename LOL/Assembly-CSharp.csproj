@@ -71,7 +71,9 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
-    <Compile Include="Assets\Scripts\Hero profile.cs" />
+    <Compile Include="Assets\Scripts\Hero.cs" />
+    <Compile Include="Assets\Scripts\HeroPlayer.cs" />
+    <Compile Include="Assets\Scripts\Herodate.cs" />
     <None Include="Assets\Fantasy Forest Environment Free Sample\StandardNoCulling.shader" />
     <None Include="Assets\Seven Swords\Swords\Shader\ToonSwords.shader" />
     <Reference Include="UnityEngine">

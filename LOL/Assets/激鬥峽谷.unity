@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 102364210}
   - component: {fileID: 102364209}
   m_Layer: 5
-  m_Name: " \u6280\u80FD(3)"
+  m_Name: "\u6280\u80FD(3)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2227,7 +2227,7 @@ GameObject:
   - component: {fileID: 1417911408}
   - component: {fileID: 1417911407}
   m_Layer: 5
-  m_Name: "\u6280\u80FD (5)"
+  m_Name: "\u6280\u80FD(5)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3431,7 +3431,7 @@ GameObject:
   - component: {fileID: 1679028076}
   - component: {fileID: 1679028075}
   m_Layer: 5
-  m_Name: "\u6280\u80FD (2)"
+  m_Name: "\u6280\u80FD(2)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4072,6 +4072,29 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: de634a26462d61a43b09df0adf0cb817, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5c9cedca12e1a4aa282ae7b53f42ab, type: 3}
+--- !u!1 &1862763376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cb5c9cedca12e1a4aa282ae7b53f42ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 1862763375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1862763377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862763376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a40f7b08a28f3f94da473dd583f7a096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 0e8a61855d4e66440a57a3ce66ee7b68, type: 2}
+  skill1: {fileID: 0}
+  skill2: {fileID: 0}
+  skill3: {fileID: 0}
+  skill4: {fileID: 0}
 --- !u!1 &1899685390
 GameObject:
   m_ObjectHideFlags: 0
