@@ -11,14 +11,34 @@ public class HeroPlayer : Hero
 
     private Image[] imgSkills = new Image[4];
     private Text[] textSkills = new Text[4];
-
+    /// <summary>
+    /// 目標物件
+    /// </summary>
+    private Transform target;
+    /// <summary>
+    /// 虛擬搖桿
+    /// </summary>
+    private Joystick joy;
     // override 複寫 - 可以複寫父類別包含 virtual 的成員
     protected override void Awake()
     {
         base.Awake();
-
+        target = GameObject.Find("目標物件").transform;
+        joy = GameObject.Find("虛擬搖桿").GetComponent<Joystick>();
         setbutton();
     }
+    private void Update()
+    {
+        MoveControl();
+    }
+    private void MoveControl()
+    {
+        float v = joy.Vertical;
+        float h = joy.Horizontal;
+        print("前後" + v);
+        print("左右" + h);
+    }
+
     private void setbutton()
     {
         skill1 = GameObject.Find("技能(1)").GetComponent<Button>();

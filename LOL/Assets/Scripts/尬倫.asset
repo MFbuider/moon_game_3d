@@ -17,4 +17,24 @@ MonoBehaviour:
   speed: 0
   attack: 0
   attackCD: 0
-  skills: []
+  skills:
+  - name: "\u6280\u80FD1"
+    attack: 10
+    cost: 10
+    image: {fileID: 21300000, guid: 7290141889de5c5418c779c5793fc2b8, type: 3}
+    cd: 2.1
+  - name: "\u6280\u80FD2"
+    attack: 40
+    cost: 40
+    image: {fileID: 21300000, guid: c66b73964d3edd146a5249f919123d0f, type: 3}
+    cd: 3.9
+  - name: "\u6280\u80FD3"
+    attack: 60
+    cost: 60
+    image: {fileID: 21300000, guid: 6169bb80b0407c340b8c6d0ce2ffe44b, type: 3}
+    cd: 6
+  - name: "\u5927\u7D55"
+    attack: 80
+    cost: 100
+    image: {fileID: 21300000, guid: 60eabd8f18a32d448b84b4e751fe7707, type: 3}
+    cd: 8
