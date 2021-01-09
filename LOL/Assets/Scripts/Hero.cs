@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Hero : MonoBehaviour
 {
+    [Header("角色資料")]
     public Herodate data;
+
     /// <summary>
     /// 動畫控制器
     /// </summary>
@@ -17,19 +19,49 @@ public class Hero : MonoBehaviour
     /// 技能是否開始
     /// </summary>
     private bool[] skillStart = new bool[4];
-
     // protected 保護 - 允許子類別存取
     // virtual 虛擬 - 允許子類別複寫
     protected virtual void Awake()
     {
         ani = GetComponent<Animator>();
+        rig = GetComponent<Rigidbody>();
     }
-    public void Move()
+    private Rigidbody rig;
+    protected virtual void Update()
     {
-        
+        TimerControl();
+    }
+    private void TimerControl()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            if (skillStart[i])
+            {
+                skillTimer[i] += Time.deltaTime;
+
+                // 如果 計時器 >= 冷卻時間 就 歸零並且設定為 尚未開始
+                if (skillTimer[i] >= data.skills[i].cd)
+                {
+                    skillTimer[i] = 0;
+                    skillStart[i] = false;
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// 移動
+    /// </summary>
+    /// <param name="target">要前往的目標位置</param>
+    public void Move(Transform target)
+    {
+        Vector3 pos = rig.position;
+        rig.MovePosition(target.position);                  // 剛體.移動座標(座標)
+        transform.LookAt(target);                           // 看向(目標物件)
+        ani.SetBool("跑步開關", rig.position != pos);        // 動畫.設定布林值(跑步參數，現在座標 不等於 前面座標)
     }
     public void Skill1()
     {
+        // 如果 技能已經開始 就跳出
         if (skillStart[0]) return;
         ani.SetTrigger("第一招");
         skillStart[0] = true;
