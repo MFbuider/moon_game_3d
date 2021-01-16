@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Hero : MonoBehaviour
 {
     [Header("角色資料")]
     public Herodate data;
+
 
     /// <summary>
     /// 動畫控制器
@@ -18,6 +21,24 @@ public class Hero : MonoBehaviour
     /// <summary>
     /// 技能是否開始
     /// </summary>
+    ///  /// <summary>
+    /// 血量
+    /// </summary>
+    private float hp;
+    /// <summary>
+    /// 畫布血條
+    /// </summary>
+    private Transform canvasHp;
+    /// <summary>
+    /// 血條文字
+    /// </summary>
+    private Text textHp;
+    /// <summary>
+    /// 血條
+    /// </summary>
+    private Image imgHp;
+
+    private float hpMax;
     private bool[] skillStart = new bool[4];
     // protected 保護 - 允許子類別存取
     // virtual 虛擬 - 允許子類別複寫
@@ -30,6 +51,23 @@ public class Hero : MonoBehaviour
     protected virtual void Update()
     {
         TimerControl();
+    }
+    /// <summary>
+    /// 受傷
+    /// </summary>
+    public void Damage(float damage)
+    {
+        hp -= damage;
+        textHp.text = hp.ToString();
+        imgHp.fillAmount = hp / hpMax;
+
+        if (hp <= 0) Dead();
+    }
+    private void Dead()
+    {
+        textHp.text = "0";
+        enabled = false;
+        ani.SetBool("死亡開關", true);
     }
     private void TimerControl()
     {
