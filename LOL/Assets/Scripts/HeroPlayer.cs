@@ -34,7 +34,7 @@ public class HeroPlayer : Hero
         target = GameObject.Find("目標物件").transform;
         joy = GameObject.Find("虛擬搖桿").GetComponent<Joystick>();
         SetSkillUI();
-       // camRoot = GameObject.Find("攝影機根物件").transform;!
+       camRoot = GameObject.Find("攝影機根物件").transform;
     }
     protected override void Update()
     {

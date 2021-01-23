@@ -8,8 +8,10 @@ public class Hero : MonoBehaviour
 {
     [Header("角色資料")]
     public Herodate data;
-
-
+    /// <summary>
+    /// 剛體
+    /// </summary>
+    private Rigidbody rig;
     /// <summary>
     /// 動畫控制器
     /// </summary>
@@ -42,15 +44,25 @@ public class Hero : MonoBehaviour
     private bool[] skillStart = new bool[4];
     // protected 保護 - 允許子類別存取
     // virtual 虛擬 - 允許子類別複寫
+
     protected virtual void Awake()
     {
         ani = GetComponent<Animator>();
         rig = GetComponent<Rigidbody>();
+        // 取得畫布並更新血條文字
+        canvasHp = transform.Find("畫布血條");
+        textHp = canvasHp.Find("血條文字").GetComponent<Text>();
+        textHp.text = data.hp.ToString();
+        imgHp = canvasHp.Find("血條").GetComponent<Image>();
     }
-    private Rigidbody rig;
     protected virtual void Update()
     {
         TimerControl();
+    }
+    private void Start()
+    {
+        hp = data.hp;
+        hpMax = hp;
     }
     /// <summary>
     /// 受傷
