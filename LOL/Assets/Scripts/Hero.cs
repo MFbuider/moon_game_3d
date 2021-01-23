@@ -102,7 +102,7 @@ public class Hero : MonoBehaviour
     /// 移動
     /// </summary>
     /// <param name="target">要前往的目標位置</param>
-    public void Move(Transform target)
+    protected virtual void Move(Transform target)
     {
         Vector3 pos = rig.position;
         rig.MovePosition(target.position);                  // 剛體.移動座標(座標)

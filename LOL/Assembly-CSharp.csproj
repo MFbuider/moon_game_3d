@@ -62,23 +62,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ColorSkies\Demo\Scripts\LookCamera.cs" />
-    <Compile Include="Assets\ColorSkies\Demo\Scripts\SkyboxChanger.cs" />
-    <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
-    <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Scripts\Hero.cs" />
     <Compile Include="Assets\Scripts\HeroPlayer.cs" />
     <Compile Include="Assets\Scripts\Herodate.cs" />
+    <Compile Include="Assets\Scripts\Solder.cs" />
     <Compile Include="Assets\Scripts\Tower.cs" />
-    <None Include="Assets\Fantasy Forest Environment Free Sample\StandardNoCulling.shader" />
-    <None Include="Assets\Seven Swords\Swords\Shader\ToonSwords.shader" />
+    <Compile Include="Assets\assets\ColorSkies\Demo\Scripts\LookCamera.cs" />
+    <Compile Include="Assets\assets\ColorSkies\Demo\Scripts\SkyboxChanger.cs" />
+    <Compile Include="Assets\assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\assets\Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+    <Compile Include="Assets\assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\assets\Tower\ColorSkies\Demo\Scripts\LookCamera.cs" />
+    <Compile Include="Assets\assets\Tower\ColorSkies\Demo\Scripts\SkyboxChanger.cs" />
+    <Compile Include="Assets\assets\Tower\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\assets\Tower\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\assets\Tower\Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\assets\Tower\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+    <Compile Include="Assets\assets\Tower\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\assets\Tower\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\assets\Tower\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\assets\Tower\Tower\ColorSkies\Demo\Scripts\LookCamera.cs" />
+    <Compile Include="Assets\assets\Tower\Tower\ColorSkies\Demo\Scripts\SkyboxChanger.cs" />
+    <Compile Include="Assets\assets\Tower\Tower\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\assets\Tower\Tower\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\assets\Tower\Tower\Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\assets\Tower\Tower\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+    <Compile Include="Assets\assets\Tower\Tower\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\assets\Tower\Tower\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\assets\Tower\Tower\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <None Include="Assets\assets\Fantasy Forest Environment Free Sample\StandardNoCulling.shader" />
+    <None Include="Assets\assets\Tower\Tower\Fantasy Forest Environment Free Sample\StandardNoCulling.shader" />
+    <None Include="Assets\assets\Seven Swords\Swords\Shader\ToonSwords.shader" />
+    <None Include="Assets\assets\Tower\Fantasy Forest Environment Free Sample\StandardNoCulling.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
